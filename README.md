@@ -1,8 +1,8 @@
-# Projekt na informatykę:
+### Projekt na informatykę:
 # Kalkulator BMI oraz dziennik kalorii
 
-Spis treści:
-1. Wstęp
+### Spis treści:
+**1. Wstęp**
 
 1.1 Cel
 
@@ -14,13 +14,13 @@ Spis treści:
 
 1.5 Definicje i akronimy
 
-2. Opis ogólny
+**2. Opis ogólny**
 
 2.1 Potrzeby użytkowników
 
 2.2 Założenia i zależności
 
-3. Cechy systemu i wymagania
+**3. Cechy systemu i wymagania**
 
 3.1 Wymagania funkcjonalne
 
@@ -32,7 +32,7 @@ Spis treści:
 
 3.5 Przypadki użycia
 
-# 1. Wstęp 
+### 1. Wstęp 
 1.1 Cel: ułatwienie liczenia spożytych kalorii w ciągu posiłku dnia tygodnia
 
 1.2 Dedykowani użytkownicy: osoby chcące zredukować, utrzymać lub powiększyć masę ciała 
@@ -41,7 +41,7 @@ Spis treści:
 
 1.4 zamierzony użytek: Liczenie kalorii po każdym spożytym posiłku dnia 
 
-# 2 Opis ogólny:
+### 2. Opis ogólny
 Jest to nowa aplikacja będąca złożeniem baz danych na które użytkownik ma wpływ oraz możliwością sprawdzenia swojego BMI
 
 2.1 założenia i zależności: kalorie nie mogą być ujemne 
