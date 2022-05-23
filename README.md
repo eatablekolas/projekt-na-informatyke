@@ -33,12 +33,17 @@ Spis treści:
 3.5 Przypadki użycia
 
 # 1. Wstęp 
-1.1 Cel: ułatwienie liczenia spożytych kalori w ciągu posiłku dnia tygodnia
-1.2 Dedykowani użytkownicy: osoby chące zredukować, utrzymać lub powiększyć mase ciała 
-1.3 kożyści: prosta obsługa oraz bazadanych produktów z możliwością tworzenia dań do posiłków
+1.1 Cel: ułatwienie liczenia spożytych kalorii w ciągu posiłku dnia tygodnia
+
+1.2 Dedykowani użytkownicy: osoby chcące zredukować, utrzymać lub powiększyć masę ciała 
+
+1.3 korzyści: prosta obsługa oraz baza danych produktów z możliwością tworzenia dań do posiłków
+
 1.4 zamierzony użytek: Liczenie kalorii po każdym spożytym posiłku dnia 
+
 # 2 Opis ogólny:
 Jest to nowa aplikacja będąca złożeniem baz danych na które użytkownik ma wpływ oraz możliwością sprawdzenia swojego BMI
+
 2.1 założenia i zależności: kalorie nie mogą być ujemne 
 aplikacja jest zależna od tworzonej przez użytkowników bazy danych zawierającej nazwe, kaloryke produktu 
 użytkownik powinien posiadać urządzenie z oprogramowaniem Android
