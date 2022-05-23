@@ -6,8 +6,9 @@ public class MenuController : MonoBehaviour
 {
     [SerializeField] Animator animator;
 
-    public void SwitchMenu(int menu)
+    // Zamienia menu wyświetlane na ekranie (0 - główne menu, 1 - kalkulator BMI, 2 - dziennik kalorii)
+    public void SwitchMenu(int menuId)
     {
-        animator.SetInteger("Menu", menu);
+        animator.SetInteger("Menu", menuId);
     }
 }
