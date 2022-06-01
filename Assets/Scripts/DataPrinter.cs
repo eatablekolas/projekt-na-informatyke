@@ -16,18 +16,21 @@ public class DataPrinter : MonoBehaviour
         IDbCommand dbcmd = dbconn.CreateCommand();
 
         string sqlQuery = 
-        "SELECT * FROM day";
+        "SELECT * FROM meals";
         dbcmd.CommandText = sqlQuery;
         IDataReader reader = dbcmd.ExecuteReader();
 
         while (reader.Read())
         {
             int id = reader.GetInt32(0);
-            int day_of_month = reader.GetInt32(1);
-            int month = reader.GetInt32(2);
-            int year = reader.GetInt32(3);
+            string name = reader.GetString(1);
+            int meal_time = reader.GetInt32(2);
+            int day = reader.GetInt32(3);
+            int month = reader.GetInt32(4);
+            int year = reader.GetInt32(5);
+            DateTime date = new DateTime(year, month, day);
 
-            print("id = " + id + "; day of month = " + day_of_month + "; month = " +  month + "; year = " +  year);
+            print(id + name + meal_time + day + month + year + (int)date.DayOfWeek);
         }
 
         reader.Close();
