@@ -11,7 +11,7 @@ public class BMICalculator : MonoBehaviour
     float height = 0;
     float weight = 0;
 
-    // Sprawdza, czy wpisana wartość nie zawiera znaków niedozwolonych ('-' i '0' na początku, oraz "." w środku)
+    // Sprawdza, czy wpisana wartość nie zawiera znaków niedozwolonych ('-' i '0' na początku)
     bool CheckForBannedMarks(string valueString, InputField affectedInputField)
     {
         if (valueString.Length < 1) return false;
@@ -19,11 +19,6 @@ public class BMICalculator : MonoBehaviour
         if (valueString.Substring(0, 1) == "-" || valueString.Substring(0, 1) == "0")
         {
             affectedInputField.text = valueString.Substring(1, valueString.Length - 1);
-            return true;
-        }
-        else if (valueString.Contains("."))
-        {
-            affectedInputField.text = valueString.Remove(valueString.Length - 1);
             return true;
         }
         
