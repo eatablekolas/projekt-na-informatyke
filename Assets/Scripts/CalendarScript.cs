@@ -6,10 +6,12 @@ using UnityEngine.UI;
 
 public class CalendarScript : MonoBehaviour
 {
+    [SerializeField] DatabaseManager database;
+    [SerializeField] MealManager mealManager;
     [SerializeField] Text DateText;
     [SerializeField] Transform Calendar;
     Text[] CalendarDays;
-    DateTime viewedDate;
+    public DateTime viewedDate;
     float selectTime;
     const float selectInterval = 1f;
 
@@ -19,9 +21,7 @@ public class CalendarScript : MonoBehaviour
         for (int i = 0; i < CalendarDays.Length; i++)
         {
             Transform dayTransform = Calendar.Find("Day" + (i + 1).ToString());
-            Transform dayTextTransform = dayTransform.GetChild(0);
-            Text dayText = dayTextTransform.GetComponent<Text>();
-            CalendarDays[i] = dayText;
+            CalendarDays[i] = dayTransform.GetChild(0).GetComponent<Text>();
         }
     }
 
@@ -66,9 +66,10 @@ public class CalendarScript : MonoBehaviour
         if (Time.fixedTime - selectTime < selectInterval) return;
         selectTime = Time.fixedTime;
 
-        Transform textTransform = buttonTransform.GetChild(0);
-        Text textComponent = textTransform.GetComponent<Text>();
-        int day = int.Parse(textComponent.text);
+        int day = int.Parse(buttonTransform.GetChild(0).GetComponent<Text>().text);
         viewedDate = new DateTime(viewedDate.Year, viewedDate.Month, day);
+
+        Dictionary<int, List<string>> MealData = database.ReadMealNames(viewedDate);
+        mealManager.ReloadMealLists(MealData);
     }
 }
