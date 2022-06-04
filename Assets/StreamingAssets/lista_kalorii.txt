@@ -1,0 +1,35 @@
+Bigos, 122 kcal
+Burrito, 326 kcal
+Chili con Carne, 266 kcal
+Enchilada, 323 kcal
+Fahita, 290 kcal
+Galareta mięsna, 144 kcal
+Gołąbki, 173 kcal
+Groch, 304 kcal
+Gulasz wołowy, 186 kcal
+Hummus, 435 kcal
+Kaczka po pekińsku, 401 kcal
+Kebab, 774 kcal
+Kiełbasa duszona z cebulką, 368 kcal
+Kurczak pieczony, 282 kcal
+Lazania, 284 kcal
+Makaron z serem, 699 kcal
+Paella, 624 kcal
+Pieczeń rzymska, 721 kcal
+Pieczeń wołowa, 23 kcal
+Pieczona fasola, 244 kcal
+Pilaw, 292 kcal
+Pizza, 272 kcal
+Ravioli, 134 kcal
+Risotto, 354 kcal
+Ryba z frytkami, 585 kcal
+Ryż brązowy, 670 kcal
+Ryż smażony, 662 kcal
+Sajgonki, 350 kcal
+Sałatka cesarska z kurczakiem, 392 kcal
+Sałatka ziemniaczana, 136 kcal
+Spaghetti Bolognese, 374 kcal
+Taco, 213 kcal
+Wieprzowina z kością, 295 kcal
+Ziemniaki tłuczone, 174 kcal
+Zupa z groszku zielonego, 190 kcal

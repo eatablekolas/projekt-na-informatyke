@@ -25,9 +25,14 @@ public class MealManager : MonoBehaviour
 
     void LoadMealPickingMenu(string search = "")
     {
-        string TextFileDirectory = Application.dataPath + "/lista_kalorii.txt";
-
+        string TextFileDirectory = Application.streamingAssetsPath + "/lista_kalorii.txt";
+#if UNITY_EDITOR
         IEnumerable<string> lines = File.ReadLines(TextFileDirectory);
+#else
+        WWW reader = new WWW(TextFileDirectory);
+        while (!reader.isDone) { }
+        string[] lines = reader.text.Split('\n');
+#endif
 
         int i = 0;
         foreach (string line in lines)
