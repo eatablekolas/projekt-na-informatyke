@@ -1,5 +1,5 @@
 ### Projekt na informatykę:
-# Kalkulator BMI oraz dziennik kalorii
+# How Many Calories? - Kalkulator BMI oraz dziennik kalorii
 
 ### Spis treści:
 **1. Wstęp**
